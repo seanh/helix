@@ -1,0 +1,11 @@
+[[language]]
+name = "python"
+auto-format = true
+
+[[language]]
+name = "python"
+language-servers = [
+  {name = "ty", except-features = ["completion", "goto-definition", "goto-declaration", "goto-reference", "goto-implementation", "document-symbols", "workspace-symbols", "signature-help", "hover"]},
+  "ruff",
+  "jedi",
+]
