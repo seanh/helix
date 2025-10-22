@@ -124,6 +124,8 @@ There's also a bunch of expansions you can use on the command line: https://docs
 Instead of using the command line, many Helix commands can also be entered via a searchable command palette that you open with <kbd>Space</kbd> <kbd>?</kbd>.
 See pickers below for keyboard shortcuts for the command palette.
 
+Since the command palette shows the keybindings and docstring for each command it can actually be a useful way to discover or remind yourself about commands and key mappings.
+
 The command palette only works for commands with no arguments or where the argument(s) have default values. Commands with required arguments actually do appear in the command palette but they don't work! For example try entering the `:move` command from the command palette, or `:open`, etc.
 
 There are also some commands that you can use from the command palette that you _can't_ use from the command line. The command line only works for [typable commands](https://docs.helix-editor.com/commands.html#typable-commands) whereas the command palette works for both typable commmands (as long as they don't have any required arguments) and [static commands](https://docs.helix-editor.com/commands.html#static-commands).
