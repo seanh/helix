@@ -10,6 +10,7 @@ Rough notes from learning Helix. At some point I might turn these into a handful
 
 TODO: Add some intro text about what Helix actually is, including the vision:
 https://github.com/helix-editor/helix/blob/master/docs/vision.md
+This Kakoune design document is also pretty relevant: https://kakoune.org/why-kakoune/why-kakoune.html
 
 ### Launching Helix
 
