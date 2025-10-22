@@ -2,7 +2,7 @@ theme = "modus_operandi_deuteranopia"
 
 [editor]
 color-modes = true
-popup-border = "all"
+popup-border = "popup"
 end-of-line-diagnostics = "disable"
 
 [editor.inline-diagnostics]
