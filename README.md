@@ -294,6 +294,8 @@ Things that add a new entry to the jumplist: changing files, search with <kbd>/<
 
 In select mode movements that would just move the cursor in normal mode will now also extend the selection, e.g. <kbd>h</kbd>, <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd>.
 
+A good metaphor is to think of entering select mode as "dropping an anchor" (since "anchor" is Helix's word for the opposite end of a selection: the end that isn't the cursor). When in normal mode the anchor is onboard the ship and movement commands move both the anchor and the cursor (albeit the anchor seems to be trailing behind sometimes). Entering select mode drops the anchor at its current location.
+
 Movements in normal mode would move the cursor and change the selection now also extend the selection, e.g. to select three words or lines: <kbd>v3w</kbd>.
 
 Edit commands like <kbd>d</kbd> automatically exit select mode.
@@ -659,13 +661,15 @@ There seems to be quite good shell integration which could be a good way to do l
 
 Rough notes:
 
-* <kbd>|</kbd> pipes the current selection(s) to a shell command and displays its output. Also `:|` or `:pipe` from the command line.
+* <kbd>|</kbd> pipes the current selection(s) to a shell command and then replaces the selection(s) with the output from the shell command. Also `:|` or `:pipe` from the command line.
 * <kbd>Alt</kbd> + <kbd>|</kbd> does the same but ignores the output of the shell command. This is `:pipe-to` on the command line.
 * <kbd>!</kbd> runs a shell command and inserts its output before each selection. Also `:insert-output` from the command line.
 * <kbd>Alt</kbd> + <kbd>!</kbd> _appends_ the output after each selection. Also `:append-output.`
 * <kbd>$</kbd> pipes each selection into a shell command and keeps only those selections for which the shell command returned `0`.
-* There's also `:!`, `:sh`, `:run-shell-command`. This doesn't seem to have a default keybinding.
+* There's also `:!`, `:sh`, `:run-shell-command`. This runs a shell command and then displays its output in a popup window. This doesn't seem to have a default keybinding.
 * And of course you can also suspend Helix and return to the shell that launched it with <kbd>Ctrl</kbd> + <kbd>z</kbd> and resume Helix again with `$ fg`.
+
+Some possible example uses of shell commands: sorting with `sort`, filtering with `uniq`.
  
 ### View mode (<kbd>z</kbd>) and sticky view (<kbd>Z</kbd>) mode
 
