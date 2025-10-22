@@ -671,7 +671,7 @@ Rough notes:
 * There's also `:!`, `:sh`, `:run-shell-command`. This runs a shell command and then displays its output in a popup window. This doesn't seem to have a default keybinding.
 * And of course you can also suspend Helix and return to the shell that launched it with <kbd>Ctrl</kbd> + <kbd>z</kbd> and resume Helix again with `$ fg`.
 
-Some possible example uses of shell commands: sorting with `sort`, filtering with `uniq`.
+Some possible example uses of shell commands: sorting with `sort`, filtering with `uniq`. Insert the current date from `date`.
  
 ### View mode (<kbd>z</kbd>) and sticky view (<kbd>Z</kbd>) mode
 
