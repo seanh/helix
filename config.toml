@@ -41,6 +41,10 @@ newline = "all"
 [keys.normal]
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
+ret = "command_mode"
+V = ["goto_line_start", "select_mode"]
+"^" = ["goto_line_start"]
+"$" = ["goto_line_end"]
 
 [keys.insert]
 S-tab = "move_parent_node_start"
