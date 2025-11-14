@@ -101,6 +101,7 @@ j = { j = "normal_mode" }
 S-tab = "move_parent_node_start"
 
 [keys.select]
+ret = "command_mode"
 # Extra smart-tab keybindings, recommended in the docs if your terminal
 # supports Shift-Tab: https://docs.helix-editor.com/editor.html#editorsmart-tab-section
 tab = "extend_parent_node_end"
