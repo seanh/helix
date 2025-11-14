@@ -34,7 +34,7 @@ space = "none"
 tab = "all"
 nbsp = "all"
 nnbsp = "all"
-newline = "all"
+newline = "none"
 
 # Extra smart-tab keybindings, recommended in the docs if your terminal
 # supports Shift-Tab: https://docs.helix-editor.com/editor.html#editorsmart-tab-section
