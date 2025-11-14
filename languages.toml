@@ -1,11 +1,38 @@
-[[language]]
-name = "python"
-auto-format = true
+[language-server.harper-ls.config.harper-ls]
+# Stop Harper from disabling itself on large files.
+# The number is in bytes (not lines or characters).
+maxFileLength = 1000000
 
 [[language]]
 name = "python"
 language-servers = [
+  "harper-ls",
   {name = "ty", except-features = ["completion", "goto-definition", "goto-declaration", "goto-reference", "goto-implementation", "document-symbols", "workspace-symbols", "signature-help", "hover"]},
   "ruff",
   "jedi",
 ]
+
+[[language]]
+name = "markdown"
+language-servers = ["harper-ls"]
+
+[[language]]
+name = "html"
+auto-format = false
+language-servers = ["harper-ls", "superhtml", "vscode-html-language-server"]
+
+[[language]]
+name = "css"
+auto-format = false
+language-servers = ["harper-ls", "vscode-css-language-server" ]
+
+# Helix doesn't seem to have a default language config for plain text.
+# Add my own.
+[[language]]
+name = "txt"
+scope = "source.txt"
+injection-regex = "txt"
+language-id = "plaintext"
+file-types = ["txt", "text"]
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "harper-ls" ]
