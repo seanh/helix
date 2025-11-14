@@ -85,7 +85,7 @@ x = ["extend_to_line_bounds"]
 X = ["select_mode", "extend_to_line_bounds"]
 # Bind `V` (which does nothing by default) to be another alternative way to do
 # the same things as `xv`, `vx` or `X` does.
-# V = ["select_mode", "extend_to_line_bounds"]
+V = ["select_mode", "extend_to_line_bounds"]
 "^" = ["goto_line_start"]
 "$" = ["goto_line_end"]
 # Extra smart-tab keybindings, recommended in the docs if your terminal
