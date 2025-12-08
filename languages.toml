@@ -19,6 +19,7 @@ language-servers = [
 [[language]]
 name = "markdown"
 language-servers = [ "marksman", "markdown-oxide", "rumdl", "harper-ls" ]
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "html"
