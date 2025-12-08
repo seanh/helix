@@ -1,3 +1,6 @@
+[language-server]
+rumdl = { command = "rumdl", args = ["server"] }
+
 [language-server.harper-ls.config.harper-ls]
 # Stop Harper from disabling itself on large files.
 # The number is in bytes (not lines or characters).
@@ -15,7 +18,7 @@ language-servers = [
 
 [[language]]
 name = "markdown"
-language-servers = ["harper-ls"]
+language-servers = [ "marksman", "markdown-oxide", "rumdl", "harper-ls" ]
 
 [[language]]
 name = "html"
