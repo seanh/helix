@@ -63,3 +63,6 @@ ret = "command_mode"
 # supports Shift-Tab: https://docs.helix-editor.com/editor.html#editorsmart-tab-section
 tab = "extend_parent_node_end"
 S-tab = "extend_parent_node_start"
+
+[keys.normal.space]
+space = "command_mode"
