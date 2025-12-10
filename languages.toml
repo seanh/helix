@@ -8,7 +8,7 @@ maxFileLength = 1000000
 
 [[language]]
 name = "python"
-auto-format = true
+auto-format = false
 language-servers = [
   "harper-ls",
   {name = "ty", except-features = ["completion", "goto-definition", "goto-declaration", "goto-reference", "goto-implementation", "document-symbols", "workspace-symbols", "signature-help", "hover"]},
