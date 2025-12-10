@@ -30,6 +30,9 @@ skip-levels = 2
 
 [editor.soft-wrap]
 enable = true
+max-wrap = 0
+max-indent-retain = 0
+wrap-indicator = ""
 
 [editor.whitespace.render]
 space = "none"
