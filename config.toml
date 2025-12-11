@@ -69,3 +69,5 @@ S-tab = "extend_parent_node_start"
 
 [keys.normal.space]
 space = "command_mode"
+r = ":reflow"
+q = ":quit"
