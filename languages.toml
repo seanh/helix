@@ -10,7 +10,6 @@ maxFileLength = 1000000
 name = "python"
 auto-format = false
 language-servers = [
-  "harper-ls",
   {name = "ty", except-features = ["completion", "goto-definition", "goto-declaration", "goto-reference", "goto-implementation", "document-symbols", "workspace-symbols", "signature-help", "hover"]},
   "ruff",
   "jedi",
@@ -18,18 +17,18 @@ language-servers = [
 
 [[language]]
 name = "markdown"
-language-servers = [ "marksman", "markdown-oxide", "rumdl", "harper-ls" ]
+language-servers = [ "marksman", "markdown-oxide", "rumdl" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "html"
 auto-format = false
-language-servers = ["harper-ls", "superhtml", "vscode-html-language-server"]
+language-servers = ["superhtml", "vscode-html-language-server"]
 
 [[language]]
 name = "css"
 auto-format = false
-language-servers = ["harper-ls", "vscode-css-language-server" ]
+language-servers = ["vscode-css-language-server" ]
 
 # Helix doesn't seem to have a default language config for plain text.
 # Add my own.
@@ -40,4 +39,4 @@ injection-regex = "txt"
 language-id = "plaintext"
 file-types = ["txt", "text"]
 indent = { tab-width = 2, unit = "  " }
-language-servers = [ "harper-ls" ]
+language-servers = [ ]
