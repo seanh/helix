@@ -52,6 +52,7 @@ V = ["select_mode", "extend_to_line_bounds"]
 # supports Shift-Tab: https://docs.helix-editor.com/editor.html#editorsmart-tab-section
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
+- = "file_explorer_in_current_buffer_directory"
 
 [keys.insert]
 # Bind `jj` to exit insert mode.
