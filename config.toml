@@ -54,6 +54,7 @@ V = ["select_mode", "extend_to_line_bounds"]
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
 - = "file_explorer_in_current_buffer_directory"
+esc = ["keep_primary_selection", "collapse_selection"]
 
 [keys.insert]
 # Bind `jj` to exit insert mode.
