@@ -5,6 +5,7 @@ color-modes = true
 popup-border = "popup"
 end-of-line-diagnostics = "disable"
 auto-pairs = false
+gutters = []
 
 [editor.inline-diagnostics]
 cursor-line = "disable"
